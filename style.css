@@ -1,0 +1,89 @@
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: #18212f;
+    color: white;
+}
+
+h1 {
+    margin: 15px;
+}
+
+.game {
+    position: relative;
+    width: 300px;
+    margin: auto;
+}
+
+.road {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    overflow: hidden;
+    background: #454545;
+    border-left: 8px solid white;
+    border-right: 8px solid white;
+    box-sizing: border-box;
+}
+
+.lane {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background: repeating-linear-gradient(
+        to bottom,
+        white 0 30px,
+        transparent 30px 60px
+    );
+}
+
+.lane1 {
+    left: 98px;
+}
+
+.lane2 {
+    left: 198px;
+}
+
+#player,
+.enemy {
+    position: absolute;
+    width: 40px;
+    height: 65px;
+    border-radius: 10px 10px 5px 5px;
+}
+
+#player {
+    bottom: 20px;
+    left: 122px;
+    background: pink;
+    border: 2px solid white;
+    box-sizing: border-box;
+}
+
+.enemy {
+    background: purple;
+    border: 2px solid white;
+    box-sizing: border-box;
+}
+
+.score {
+    padding: 10px;
+    font-size: 20px;
+}
+
+#message {
+    margin: 12px;
+}
+
+button {
+    padding: 10px 24px;
+    background: #00c878;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
